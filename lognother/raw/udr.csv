@@ -1,0 +1,14 @@
+
+03/06 14:24:23.597: [app] INFO: SIGTERM received (../src/main.c:53)
+03/06 14:24:23.597: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+03/06 14:24:23.597: [sbi] INFO: [e0132d62-bbe5-41ed-aeb3-47de3a57299d] NF de-registered (../lib/sbi/nf-sm.c:240)
+03/06 14:24:23.599: [app] INFO: UDR terminate...done (../src/udr/app.c:39)
+Open5GS daemon v2.5.8
+
+03/06 14:24:23.617: [app] INFO: Configuration: '/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:126)
+03/06 14:24:23.617: [app] INFO: File Logging: '/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:129)
+03/06 14:24:23.621: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+03/06 14:24:23.621: [sbi] INFO: NF Service [nudr-dr] (../lib/sbi/context.c:1408)
+03/06 14:24:23.621: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:150)
+03/06 14:24:23.621: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+03/06 14:24:23.623: [sbi] INFO: [eb3738fa-bbef-41ed-b438-49a8877cea6b] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)

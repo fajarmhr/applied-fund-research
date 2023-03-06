@@ -1,0 +1,17 @@
+
+03/06 14:24:23.503: [app] INFO: SIGTERM received (../src/main.c:53)
+03/06 14:24:23.504: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+03/06 14:24:23.504: [sbi] INFO: [e0005f34-bbe5-41ed-93f7-bda7d5ee48cf] NF de-registered (../lib/sbi/nf-sm.c:240)
+03/06 14:24:23.505: [app] INFO: UDM terminate...done (../src/udm/app.c:39)
+Open5GS daemon v2.5.8
+
+03/06 14:24:23.527: [app] INFO: Configuration: '/etc/open5gs/udm.yaml' (../lib/app/ogs-init.c:126)
+03/06 14:24:23.527: [app] INFO: File Logging: '/var/log/open5gs/udm.log' (../lib/app/ogs-init.c:129)
+03/06 14:24:23.529: [sbi] INFO: NF Service [nudm-ueau] (../lib/sbi/context.c:1408)
+03/06 14:24:23.529: [sbi] INFO: NF Service [nudm-uecm] (../lib/sbi/context.c:1408)
+03/06 14:24:23.529: [sbi] INFO: NF Service [nudm-sdm] (../lib/sbi/context.c:1408)
+03/06 14:24:23.530: [sbi] INFO: nghttp2_server() [127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:150)
+03/06 14:24:23.530: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+03/06 14:24:23.532: [sbi] INFO: [eb2984d0-bbef-41ed-838d-9367cd8cf16e] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
+03/06 14:24:23.622: [sbi] INFO: [eb3738fa-bbef-41ed-b438-49a8877cea6b] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:622)
+03/06 14:24:23.622: [sbi] INFO: [eb3738fa-bbef-41ed-b438-49a8877cea6b] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:632)

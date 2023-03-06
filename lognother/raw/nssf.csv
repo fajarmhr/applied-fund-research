@@ -1,0 +1,13 @@
+
+03/06 14:24:23.555: [app] INFO: SIGTERM received (../src/main.c:53)
+03/06 14:24:23.555: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+03/06 14:24:23.555: [sbi] INFO: [e00aac64-bbe5-41ed-8a52-210e5de7525b] NF de-registered (../lib/sbi/nf-sm.c:240)
+03/06 14:24:23.557: [app] INFO: NSSF terminate...done (../src/nssf/app.c:39)
+Open5GS daemon v2.5.8
+
+03/06 14:24:23.569: [app] INFO: Configuration: '/etc/open5gs/nssf.yaml' (../lib/app/ogs-init.c:126)
+03/06 14:24:23.569: [app] INFO: File Logging: '/var/log/open5gs/nssf.log' (../lib/app/ogs-init.c:129)
+03/06 14:24:23.571: [sbi] INFO: NF Service [nnssf-nsselection] (../lib/sbi/context.c:1408)
+03/06 14:24:23.571: [sbi] INFO: nghttp2_server() [127.0.0.14]:7777 (../lib/sbi/nghttp2-server.c:150)
+03/06 14:24:23.571: [app] INFO: NSSF initialize...done (../src/nssf/app.c:31)
+03/06 14:24:23.572: [sbi] INFO: [eb2fd79a-bbef-41ed-8ba9-bb1cb5cda2a6] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:214)
