@@ -1,0 +1,296 @@
+2023-03-07T05:00:48.174410 [ENB    ] [I] Using binary srsenb with arguments: ./enb.conf 
+2023-03-07T05:00:48.210508 [ENB    ] [I] Built in Release mode using commit 254cc719a on branch master.
+2023-03-07T05:00:48.211454 [ENB    ] [I] Using sync queue size of one for ZMQ based radio.
+2023-03-07T05:00:48.246566 [MAC-NR ] [I] [    0] Started
+2023-03-07T05:00:48.246574 [RRC-NR ] [I] Cell idx=0, pci=7, nr_dl_arfcn=368500, nr_ul_arfcn=349500, band=3, duplex=FDD, n_rb_dl=52, ssb_arfcn=368410
+2023-03-07T05:00:48.246579 [RRC-NR ] [I] BCCH-BCH Message (with MIB) (3 B)
+    0000: 00 63 04
+2023-03-07T05:00:48.246594 [RRC-NR ] [I] MIB content: {
+  "systemFrameNumber": "000000",
+  "subCarrierSpacingCommon": "scs15or60",
+  "ssb-SubcarrierOffset": 6,
+  "dmrs-TypeA-Position": "pos2",
+  "pdcch-ConfigSIB1": {
+    "controlResourceSetZero": 6,
+    "searchSpaceZero": 0
+  },
+  "cellBarred": "notBarred",
+  "intraFreqReselection": "allowed",
+  "spare": "0"
+}
+2023-03-07T05:00:48.246617 [RRC-NR ] [I] BCCH-DL-SCH-Message (with SIB1) (77 B)
+    0000: 74 81 01 70 10 54 40 12 00 00 2c 00 00 33 a0 f8
+    0010: 05 41 00 40 1a 00 00 06 6c 6d 92 21 f3 70 40 20
+2023-03-07T05:00:48.246687 [RRC-NR ] [I] SIB1 content: {
+  "systemFrameNumber": "000000",
+  "subCarrierSpacingCommon": "scs15or60",
+  "ssb-SubcarrierOffset": 6,
+  "dmrs-TypeA-Position": "pos2",
+  "pdcch-ConfigSIB1": {
+    "controlResourceSetZero": 6,
+    "searchSpaceZero": 0
+  },
+  "cellBarred": "notBarred",
+  "intraFreqReselection": "allowed",
+  "spare": "0"
+},
+{
+  "cellSelectionInfo": {
+    "q-RxLevMin": -70,
+    "q-QualMin": -20
+  },
+  "cellAccessRelatedInfo": {
+    "plmn-IdentityList": [
+      {
+        "plmn-IdentityList": [
+          {
+            "mcc": [
+              5,
+              1,
+              0
+            ],
+            "mnc": [
+              0,
+              9
+            ]
+          }
+        ],
+        "trackingAreaCode": "000000000000000000010110",
+        "cellIdentity": "000000000000000000011001110100000111",
+        "cellReservedForOperatorUse": "notReserved"
+      }
+    ]
+  },
+  "connEstFailureControl": {
+    "connEstFailCount": "n1",
+    "connEstFailOffsetValidity": "s30",
+    "connEstFailOffset": 1
+  },
+  "servingCellConfigCommon": {
+    "downlinkConfigCommon": {
+      "frequencyInfoDL": {
+        "frequencyBandList": [
+          {
+            "freqBandIndicatorNR": 3
+          }
+        ],
+        "offsetToPointA": 13,
+        "scs-SpecificCarrierList": [
+          {
+            "offsetToCarrier": 0,
+            "subcarrierSpacing": "kHz15",
+            "carrierBandwidth": 52
+          }
+        ]
+      },
+      "initialDownlinkBWP": {
+        "genericParameters": {
+          "locationAndBandwidth": 14025,
+          "subcarrierSpacing": "kHz15"
+        },
+        "pdcch-ConfigCommon": {
+          {
+            "commonSearchSpaceList": [
+              {
+                "searchSpaceId": 1,
+                "controlResourceSetId": 0,
+                "monitoringSlotPeriodicityAndOffset": {
+                },
+                "monitoringSymbolsWithinSlot": "10000000000000",
+                "nrofCandidates": {
+                  "aggregationLevel1": "n0",
+                  "aggregationLevel2": "n0",
+                  "aggregationLevel4": "n1",
+                  "aggregationLevel8": "n0",
+                  "aggregationLevel16": "n0"
+                },
+                "searchSpaceType": {
+                  "common": {
+                    "dci-Format0-0-AndFormat1-0": {
+                    }
+                  }
+                }
+              }
+            ],
+            "searchSpaceSIB1": 0,
+            "searchSpaceOtherSystemInformation": 1,
+            "pagingSearchSpace": 1,
+            "ra-SearchSpace": 1
+          }
+        },
+        "pdsch-ConfigCommon": {
+          {
+            "pdsch-TimeDomainAllocationList": [
+              {
+                "mappingType": "typeA",
+                "startSymbolAndLength": 40
+              }
+            ]
+          }
+        }
+      },
+      "bcch-Config": {
+        "modificationPeriodCoeff": "n4"
+      },
+      "pcch-Config": {
+        "defaultPagingCycle": "rf128",
+        "nAndPagingFrameOffset": {
+        },
+        "ns": "one"
+      }
+    },
+    "uplinkConfigCommon": {
+      "frequencyInfoUL": {
+        "frequencyBandList": [
+          {
+            "freqBandIndicatorNR": 3
+          }
+        ],
+        "absoluteFrequencyPointA": 348564,
+        "scs-SpecificCarrierList": [
+          {
+            "offsetToCarrier": 0,
+            "subcarrierSpacing": "kHz15",
+            "carrierBandwidth": 52
+          }
+        ],
+        "p-Max": 10
+      },
+      "initialUplinkBWP": {
+        "genericParameters": {
+          "locationAndBandwidth": 14025,
+          "subcarrierSpacing": "kHz15"
+        },
+        "rach-ConfigCommon": {
+          {
+            "rach-ConfigGeneric": {
+              "prach-ConfigurationIndex": 0,
+              "msg1-FDM": "one",
+              "msg1-FrequencyStart": 1,
+              "zeroCorrelationZoneConfig": 0,
+              "preambleReceivedTargetPower": -110,
+              "preambleTransMax": "n7",
+              "powerRampingStep": "dB4",
+              "ra-ResponseWindow": "sl10"
+            },
+            "totalNumberOfRA-Preambles": 8,
+            "ssb-perRACH-OccasionAndCB-PreamblesPerSSB": {
+              "one": "n8"
+            },
+            "ra-ContentionResolutionTimer": "sf64",
+            "prach-RootSequenceIndex": {
+              "l839": 204
+            },
+            "restrictedSetConfig": "unrestrictedSet"
+          }
+        },
+        "pusch-ConfigCommon": {
+          {
+            "pusch-TimeDomainAllocationList": [
+              {
+                "k2": 4,
+                "mappingType": "typeA",
+                "startSymbolAndLength": 27
+              }
+            ],
+            "p0-NominalWithGrant": -76
+          }
+        },
+        "pucch-ConfigCommon": {
+          {
+            "pucch-ResourceCommon": 11,
+            "pucch-GroupHopping": "neither",
+            "p0-nominal": -90
+          }
+        }
+      },
+      "timeAlignmentTimerCommon": "infinity"
+    },
+    "n-TimingAdvanceOffset": "n0",
+    "ssb-PositionsInBurst": {
+      "inOneGroup": "10000000"
+    },
+    "ssb-PeriodicityServingCell": "ms10",
+    "ss-PBCH-BlockPower": 0
+  },
+  "ue-TimersAndConstants": {
+    "t300": "ms1000",
+    "t301": "ms1000",
+    "t310": "ms1000",
+    "n310": "n1",
+    "t311": "ms30000",
+    "n311": "n1",
+    "t319": "ms1000"
+  }
+}
+2023-03-07T05:00:48.246782 [RRC-NR ] [I] BCCH - Tx SIB1 payload (77 B)
+    0000: 74 81 01 70 10 54 40 12 00 00 2c 00 00 33 a0 f8
+    0010: 05 41 00 40 1a 00 00 06 6c 6d 92 21 f3 70 40 20
+2023-03-07T05:00:48.328362 [MAC-NR ] [I] [    0] Including SIB 1 into SI scheduling
+2023-03-07T05:00:48.328394 [RRC-NR ] [I] Number of 5QI 2
+2023-03-07T05:00:48.328395 [RRC-NR ] [I] 5QI configuration. 5QI=7
+2023-03-07T05:00:48.328404 [RRC-NR ] [I] PDCP NR configuration: {
+  "drb": {
+    "discardTimer": "ms50",
+    "pdcp-SN-SizeUL": "len18bits",
+    "pdcp-SN-SizeDL": "len18bits",
+    "headerCompression": {
+    }
+  },
+  "t-Reordering": "ms50"
+}
+2023-03-07T05:00:48.328409 [RRC-NR ] [I] RLC NR configuration: {
+  "um-Bi-Directional": {
+    "ul-UM-RLC": {
+      "sn-FieldLength": "size12"
+    },
+    "dl-UM-RLC": {
+      "sn-FieldLength": "size12",
+      "t-Reassembly": "ms50"
+    }
+  }
+}
+2023-03-07T05:00:48.328410 [RRC-NR ] [I] 5QI configuration. 5QI=9
+2023-03-07T05:00:48.328413 [RRC-NR ] [I] PDCP NR configuration: {
+  "drb": {
+    "discardTimer": "ms50",
+    "pdcp-SN-SizeUL": "len18bits",
+    "pdcp-SN-SizeDL": "len18bits",
+    "headerCompression": {
+    }
+  },
+  "t-Reordering": "ms50"
+}
+2023-03-07T05:00:48.328421 [RRC-NR ] [I] RLC NR configuration: {
+  "am": {
+    "ul-AM-RLC": {
+      "sn-FieldLength": "size12",
+      "t-PollRetransmit": "ms50",
+      "pollPDU": "p4",
+      "pollByte": "kB3000",
+      "maxRetxThreshold": "t4"
+    },
+    "dl-AM-RLC": {
+      "sn-FieldLength": "size12",
+      "t-Reassembly": "ms50",
+      "t-StatusProhibit": "ms50"
+    }
+  }
+}
+2023-03-07T05:00:48.328421 [RRC-NR ] [I] NIA preference list: NIA2, NIA1, NIA0
+2023-03-07T05:00:48.328422 [RRC-NR ] [I] NEA preference list: NEA0, NEA2, NEA1
+2023-03-07T05:00:48.328487 [NGAP   ] [I] Proc "AMF Connection" - Starting new AMF connection.
+2023-03-07T05:00:48.328488 [NGAP   ] [I] Connecting to AMF 127.0.0.5:38412
+2023-03-07T05:00:48.328501 [NGAP   ] [I] SCTP socket opened. fd=8
+2023-03-07T05:00:48.328601 [COMN   ] [I] Failed to establish socket connection to 127.0.0.5
+2023-03-07T05:00:48.328624 [NGAP   ] [I] Proc "AMF Connection" - Could not connect to AMF
+2023-03-07T05:00:48.328624 [NGAP   ] [I] Proc "AMF Connection" - Failed to initiate NG connection. Attempting reconnection in 10 seconds
+2023-03-07T05:00:48.328630 [COMN   ] [W] RxSockets: The socket fd=8 to be removed does not exist
+2023-03-07T05:00:48.328638 [NGAP   ] [I] Proc "AMF Connection" - NGAP socket closed.
+2023-03-07T05:00:48.328639 [NGAP   ] [E] Failed to initiate NGSetup procedure.
+2023-03-07T05:00:48.330803 [RF     ] [I] Configuring physical DL channel 0 with band-pass filter (0.0, 0.0)
+2023-03-07T05:00:48.330804 [RF     ] [I] Configuring physical UL channel 0 with band-pass filter (0.0, 0.0)
+2023-03-07T05:00:48.416970 [PHY-NR ] [I] [    0] Setting SSB configuration srate=11.52 MHz; c-freq=1842.500 MHz; ss-freq=1842.050 MHz; scs=15kHz; pattern=A; duplex=fdd; period=10 ms;
+2023-03-07T05:00:48.422957 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_tx=1842.5 MHz
+2023-03-07T05:00:48.422960 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_rx=1747.5 MHz
+2023-03-07T05:00:48.422962 [PHY    ] [I] [    0] Starting RX/TX thread nof_prb=52, sf_len=11520
